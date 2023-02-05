@@ -1,0 +1,7 @@
+Package: {{ cookiecutter.app_name }}
+Version: {{ cookiecutter.version }}
+Architecture: {{ cookiecutter.arch }}
+Maintainer: {{ cookiecutter.author }} <{{ cookiecutter.author_email }}>
+Homepage: {{ cookiecutter.url }}
+Description: {{ cookiecutter.description.replace("\n", "\n ") }}
+Depends: {{ cookiecutter.system_runtime_requires }}
