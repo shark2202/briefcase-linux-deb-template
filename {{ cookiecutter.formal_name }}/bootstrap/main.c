@@ -53,6 +53,11 @@ int main(int argc, char *argv[]) {
     config.write_bytecode = 0;
     // Isolated apps need to set the full PYTHONPATH manually.
     config.module_search_paths_set = 1;
+    // We're using the system Python's stdlib; however, we don't want anything
+    // except for the core of the stdlib. If we import the site module, any
+    // local site modifications (e.g., an active virtual environment) will leak
+    // into the running app's sys.path.
+    config.site_import = 0;
 
     printf("Pre-initializing Python runtime...\n");
     status = Py_PreInitialize(&preconfig);
