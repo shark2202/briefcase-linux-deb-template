@@ -12,6 +12,7 @@
     "description": "Short description of app",
     "long_description": "Long description of app",
     "briefcase_version": "0.3.X",
+    "python_source": "system",
     "python_version": "3.X.0",
     "docker_base_image": "ubuntu:18.04",
     "dockerfile_extra_content": "",
