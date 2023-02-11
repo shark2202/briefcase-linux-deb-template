@@ -3,5 +3,8 @@ Version: {{ cookiecutter.version }}
 Architecture: {{ cookiecutter.arch }}
 Maintainer: {{ cookiecutter.author }} <{{ cookiecutter.author_email }}>
 Homepage: {{ cookiecutter.url }}
-Description: {{ cookiecutter.description.replace("\n", "\n ") }}
+Description: {{ cookiecutter.description.split("\n")[0] }}
+ {{ cookiecutter.long_description.replace("\n", "\n ") }}
 Depends: {{ cookiecutter.system_runtime_requires }}
+Section: {{ cookiecutter.system_section }}
+Priority: optional

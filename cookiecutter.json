@@ -10,11 +10,13 @@
     "bundle": "com.example",
     "url": "https://example.com",
     "description": "Short description of app",
+    "long_description": "Long description of app",
     "briefcase_version": "0.3.X",
     "python_version": "3.X.0",
     "docker_base_image": "ubuntu:18.04",
     "dockerfile_extra_content": "",
     "system_runtime_requires": "",
+    "system_section": "utils",
     "_extensions": [
         "briefcase.integrations.cookiecutter.PythonVersionExtension"
     ]

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name={{ cookiecutter.formal_name }}
-Exec=/usr/local/bin/{{ cookiecutter.app_name }} %F
+Exec=/usr/bin/{{ cookiecutter.app_name }} %F
 Icon={{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}
 Categories=Utility;
 Comment={{ cookiecutter.description }}
