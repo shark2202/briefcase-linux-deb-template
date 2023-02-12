@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND="noninteractive" \
 {% if cookiecutter.python_source == "deadsnakes" %}
 # Install the deadsnakes PPA so we can get arbitrary Python versions
 RUN apt-get update -y && \
-    apt-get install --no-install-recommends -y software-properties-common && \
+    apt-get install --no-install-recommends -y software-properties-common gnupg && \
     apt-add-repository ppa:deadsnakes/ppa
 
 # Install Python from deadsnakes
