@@ -19,6 +19,7 @@
     "system_runtime_requires": "",
     "system_section": "utils",
     "_extensions": [
-        "briefcase.integrations.cookiecutter.PythonVersionExtension"
+        "briefcase.integrations.cookiecutter.PythonVersionExtension",
+        "briefcase.integrations.cookiecutter.StringExtension"
     ]
 }
